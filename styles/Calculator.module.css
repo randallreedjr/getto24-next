@@ -1,0 +1,38 @@
+.calculatorContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.displayContainer {
+  display: inline-flex;
+  min-width: 100%;
+}
+
+.display {
+  border: 2px solid black;
+  min-height: 76px;
+  padding: 0px 14px;
+  display: flex;
+  align-items: center;
+  flex-grow: 4;
+}
+
+.displayContents{
+  font-size: 36px;
+}
+
+.displayEquals {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.displayResult {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  margin-left: 10px;
+  /* border-bottom: 2px solid black; */
+  text-decoration: underline;
+}

@@ -22,20 +22,26 @@ class Calculator extends React.Component {
             </div>
           </div>
         
-          <div className={styles.displayEquals}>
-            =
-          </div>
           <div className={styles.displayResult}>
-            ??
+            <div className={styles.displayEquals}>
+              =
+            </div>
+            <div className={styles.displayValue}>
+              ??
+            </div>
           </div>
         </div>
 
         <div className={styles.operandsContainer}>
-          <button>1</button>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+          <div className={styles.operandsButtonsContainer}>
+            <button className={`${styles.operandsButton} ${styles.operandsButtonEnabled}`}>1</button>
+            <button className={`${styles.operandsButton} ${styles.operandsButtonDisabled}`} disabled>2</button>
+            <button className={styles.operandsButton}>3</button>
+            <button className={styles.operandsButton}>4</button>
+          </div>
+          <div className={styles.operandsSpacerContainer}>
+            &nbsp;
+          </div>
         </div>
         
       </div>
